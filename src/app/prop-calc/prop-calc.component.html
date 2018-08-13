@@ -1,0 +1,35 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+  <div class="container-fluid">
+    <h1 class="display-4 text-center">Operating Income</h1>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="numOfUnits">Number Of Units</label>
+          <input name="numOfUnits" type="number" class="form-control" placeholder="3" ngModel required>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="avgRentPerUnit">Average Rent Per Unit</label>
+          <input name="avgRentPerUnit" type="number" class="form-control" placeholder="900" ngModel required>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="vacancy">Expected Vacancy %</label>
+          <input name="vacancy" type="number" class="form-control" placeholder="10" ngModel required>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="otherIncome">Other Income:</label>
+          <input name="otherIncome" type="number" class="form-control" placeholder="0" ngModel>
+          <small class="form-text form-muted">Laundry, Parking, etc.</small>
+        </div>
+      </div>
+    </div>
+    <hr style="height: 3px; background-color:gray;">
+    <div class="row">
+    </div>
+  </div>
+</form>
