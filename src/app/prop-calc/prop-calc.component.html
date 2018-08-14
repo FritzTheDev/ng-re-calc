@@ -1,11 +1,11 @@
 <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
   <div class="container-fluid">
-    <h1 class="display-4 text-center">Operating Income</h1>
+    <h3 class="raleway text-center">Monthly Operating Income</h3>
     <div class="row">
       <div class="col-md-3">
         <div class="form-group">
           <label for="numOfUnits">Number Of Units</label>
-          <input name="numOfUnits" type="number" class="form-control" placeholder="3" ngModel required>
+          <input name="numOfUnits" type="number" class="form-control" placeholder="1" ngModel required>
         </div>
       </div>
       <div class="col-md-3">
@@ -17,7 +17,7 @@
       <div class="col-md-3">
         <div class="form-group">
           <label for="vacancy">Expected Vacancy %</label>
-          <input name="vacancy" type="number" class="form-control" placeholder="10" ngModel required>
+          <input name="vacancy" type="number" class="form-control" placeholder="7" ngModel required>
         </div>
       </div>
       <div class="col-md-3">
@@ -28,8 +28,58 @@
         </div>
       </div>
     </div>
-    <hr style="height: 3px; background-color:gray;">
+    <hr>
+    <h3 class="text-center raleway">Monthly Operating Expenses</h3>
     <div class="row">
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="propManagement">Property Management Fee</label>
+          <input name="propManagement" type="number" class="form-control" placeholder="90" ngModel required>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="repairs">Repairs & Maintenance</label>
+          <input name="repairs" type="number" class="form-control" placeholder="60" ngModel required>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="propTax">Property Tax</label>
+          <input name="propTax" type="number" class="form-control" placeholder="50" ngModel required>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="insurance">Insurance</label>
+          <input name="insurance" type="number" class="form-control" placeholder="30" ngModel required>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="hoa">Homeowner's Association</label>
+          <input name="hoa" type="number" class="form-control" placeholder="0" ngModel required>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="capEx">Replacement Reserve / CapEx</label>
+          <input name="capEx" type="number" class="form-control" placeholder="40" ngModel required>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="utilities">Utilities</label>
+          <input name="utilities" type="number" class="form-control" placeholder="40" ngModel required>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label for="accounting">Accounting & Legal</label>
+          <input name="accounting" type="number" class="form-control" placeholder="30" ngModel required>
+        </div>
+      </div>
     </div>
+    <hr>
   </div>
 </form>
